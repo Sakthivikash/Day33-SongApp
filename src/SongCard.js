@@ -12,7 +12,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 export function SongCard({ image, title, movie, id,editButton, deleteButton }) {
   const history = useHistory();
   const [show, setshow] = useState(true);
- console.log(id);
+
   return (
     <Card sx={{ maxWidth: 345, margin: 2 }} 
     className="card"

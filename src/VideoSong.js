@@ -1,10 +1,23 @@
 import { useParams } from "react-router-dom";
 import { songsList } from "./songlist";
+import { API } from "./global";
+import { useState, useEffect  } from "react";
 
 export function VideoSong() {
   const { id } = useParams();
 
-  const song = songsList[id];
+  const [song, setSong]= useState({});
+  const getSong = () => {
+    fetch(`${API}/${id}`, 
+    {method: "GET",}) // promise
+    .then((data) => data.json()) // Response object
+    .then((mvs) => setSong(mvs))
+    .catch((err) => console.log(err));
+  };
+
+  useEffect(() => getSong(), []);
+  // const song = songsList[id];
+  console.log(song);
   return (
     <div className="song-box">
       <h1 className="title">{song.title}</h1>
