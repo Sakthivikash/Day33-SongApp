@@ -2,37 +2,83 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  text-align: start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content{
+  font-size: 25px;
+  margin-top: 50px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.video{
+  width: 1200px;
+}
+.song-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  margin: 20px;
+  background-color: rgb(66, 146, 243);
 
-.App-link {
-  color: #61dafb;
 }
+.song-det{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.addform,.Editform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  opacity: 0.9;
+}
+.inputdata{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(128 126 126), -1px -1px 5px;
+  margin: 10px;
+}
+.inputs{
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+#outlined-basic{
+  width: 400px;
+  height: 20px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.addbtn{
+  width: 500px;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
 }
